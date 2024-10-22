@@ -8,21 +8,119 @@ export default function Copilot() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
 
-  const apiKey = "<YOUR_API_KEY>";
+  const apiKey = process.env.GEMINI_API_KEY;
   const generativeAI = new GoogleGenerativeAI(apiKey);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (input.trim()) {
       setMessages([...messages, { text: input, isUser: true }]);
-      // Here you would typically send the input to your backend or process it
-      // For now, we'll just echo it back
-      setTimeout(() => {
-        setMessages((prev) => [
-          ...prev,
-          { text: `You said: ${input}`, isUser: false },
+
+      try {
+        const response = await generativeAI.generate({
+          prompt: input,
+          maxTokens: 64,
+          temperature: 0.7,
+        });
+
+        const generatedText = response.text;
+        setMessages([...messages, { text: generatedText, isUser: false }]);
+
+        // Process Gemini response for cart actions
+        const { addToCart, updateQuantity, removeItem } = useCart();
+
+        if (generatedText.includes("add")) {
+          // Extract product name from the prompt (using regular expressions)
+          const productNameMatch = input.match(/add (.*) to cart/i);
+          if (productNameMatch) {
+            const productName = productNameMatch[1].trim();
+            const product = products.find(
+              (product) =>
+                product.name.toLowerCase() === productName.toLowerCase(),
+            );
+            if (product) {
+              addToCart(product);
+            } else {
+              setMessages([
+                ...messages,
+                { text: `Product '${productName}' not found!`, isUser: false },
+              ]);
+            }
+          } else {
+            setMessages([
+              ...messages,
+              {
+                text: "Could not understand the product to add.",
+                isUser: false,
+              },
+            ]);
+          }
+        } else if (generatedText.includes("update quantity")) {
+          // Extract product ID and new quantity from the prompt (using regular expressions)
+          const quantityMatch = input.match(
+            /update quantity of (.*) to (\d+)/i,
+          );
+          if (quantityMatch) {
+            const productId = products.find(
+              (product) =>
+                product.name.toLowerCase() === quantityMatch[1].trim(),
+            )?.id;
+            const newQuantity = parseInt(quantityMatch[2]);
+            if (productId && newQuantity > 0) {
+              updateQuantity(productId, newQuantity);
+            } else {
+              setMessages([
+                ...messages,
+                { text: "Invalid product or quantity.", isUser: false },
+              ]);
+            }
+          } else {
+            setMessages([
+              ...messages,
+              {
+                text: "Could not understand product or new quantity.",
+                isUser: false,
+              },
+            ]);
+          }
+        } else if (generatedText.includes("remove")) {
+          // Extract product name from the prompt (using regular expressions)
+          const productNameMatch = input.match(/remove (.*) from cart/i);
+          if (productNameMatch) {
+            const productName = productNameMatch[1].trim();
+            const product = products.find(
+              (product) =>
+                product.name.toLowerCase() === productName.toLowerCase(),
+            );
+            if (product) {
+              removeItem(product.id);
+            } else {
+              setMessages([
+                ...messages,
+                {
+                  text: `Product '${productName}' not found in cart!`,
+                  isUser: false,
+                },
+              ]);
+            }
+          } else {
+            setMessages([
+              ...messages,
+              {
+                text: "Could not understand the product to remove.",
+                isUser: false,
+              },
+            ]);
+          }
+        }
+      } catch (error) {
+        console.error("Error with Gemini API:", error);
+        setMessages([
+          ...messages,
+          { text: "Something went wrong...", isUser: false },
         ]);
-      }, 500);
+      }
+
       setInput("");
     }
   };
