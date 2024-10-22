@@ -1,16 +1,16 @@
 // src/pages/Cart.jsx
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { useCart } from "../context/CartContext"; // Adjust path if necessary
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useCart } from '../context/CartContext'; // Adjust path if necessary
 
 export default function Cart() {
   const { cartItems, updateQuantity, removeItem } = useCart();
-  const [couponCode, setCouponCode] = useState("");
+  const [couponCode, setCouponCode] = useState('');
 
   // Calculate subtotal, shipping, and total
   const subtotal = cartItems.reduce(
     (sum, item) => sum + Number(item.price) * item.quantity,
-    0,
+    0
   );
   const shipping = 10; // Fixed shipping cost, you can make this dynamic if needed
   const total = subtotal + shipping;

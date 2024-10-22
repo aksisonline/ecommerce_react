@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-const steps = ["Shipping Address", "Payment Method", "Review Your Order"];
+const steps = ['Shipping Address', 'Payment Method', 'Review Your Order'];
 
 export default function Checkout() {
   const [activeStep, setActiveStep] = useState(0);
   const [shippingAddress, setShippingAddress] = useState({
-    firstName: "",
-    lastName: "",
-    address: "",
-    city: "",
-    state: "",
-    zip: "",
-    country: "",
+    firstName: '',
+    lastName: '',
+    address: '',
+    city: '',
+    state: '',
+    zip: '',
+    country: '',
   });
-  const [paymentMethod, setPaymentMethod] = useState("credit");
+  const [paymentMethod, setPaymentMethod] = useState('credit');
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -119,7 +119,7 @@ export default function Checkout() {
                 <input
                   type="radio"
                   value="credit"
-                  checked={paymentMethod === "credit"}
+                  checked={paymentMethod === 'credit'}
                   onChange={handlePaymentMethodChange}
                   className="mr-2"
                 />
@@ -129,7 +129,7 @@ export default function Checkout() {
                 <input
                   type="radio"
                   value="debit"
-                  checked={paymentMethod === "debit"}
+                  checked={paymentMethod === 'debit'}
                   onChange={handlePaymentMethodChange}
                   className="mr-2"
                 />
@@ -139,14 +139,14 @@ export default function Checkout() {
                 <input
                   type="radio"
                   value="paypal"
-                  checked={paymentMethod === "paypal"}
+                  checked={paymentMethod === 'paypal'}
                   onChange={handlePaymentMethodChange}
                   className="mr-2"
                 />
                 PayPal
               </label>
             </div>
-            {(paymentMethod === "credit" || paymentMethod === "debit") && (
+            {(paymentMethod === 'credit' || paymentMethod === 'debit') && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <input
                   required
@@ -191,7 +191,7 @@ export default function Checkout() {
           </div>
         );
       default:
-        return "Unknown step";
+        return 'Unknown step';
     }
   };
 
@@ -204,10 +204,10 @@ export default function Checkout() {
             <div key={label} className="flex-1">
               <div
                 className={`border-t-4 p-2 ${
-                  index <= activeStep ? "border-blue-500" : "border-gray-300"
+                  index <= activeStep ? 'border-blue-500' : 'border-gray-300'
                 }`}
               >
-                <p className={index === activeStep ? "text-blue-500" : ""}>
+                <p className={index === activeStep ? 'text-blue-500' : ''}>
                   {label}
                 </p>
               </div>
@@ -230,7 +230,7 @@ export default function Checkout() {
             {getStepContent(activeStep)}
             <div className="mt-8 flex justify-between">
               <button
-                className={`btn ${activeStep === 0 ? "opacity-50 cursor-not-allowed" : ""}`}
+                className={`btn ${activeStep === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
                 disabled={activeStep === 0}
                 onClick={handleBack}
               >
@@ -240,7 +240,7 @@ export default function Checkout() {
                 className="btn bg-blue-500 text-white"
                 onClick={handleNext}
               >
-                {activeStep === steps.length - 1 ? "Place order" : "Next"}
+                {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
               </button>
             </div>
           </div>

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 export default function Account() {
-  const [activeTab, setActiveTab] = useState("profile");
+  const [activeTab, setActiveTab] = useState('profile');
 
   return (
     <div className="max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -12,28 +12,28 @@ export default function Account() {
         <nav className="flex justify-center space-x-6 border-b">
           <button
             className={`pb-2 px-4 transition duration-300 ${
-              activeTab === "profile"
-                ? "border-b-4 border-blue-500 text-blue-500"
-                : "text-gray-600 hover:text-blue-500"
+              activeTab === 'profile'
+                ? 'border-b-4 border-blue-500 text-blue-500'
+                : 'text-gray-600 hover:text-blue-500'
             }`}
-            onClick={() => setActiveTab("profile")}
+            onClick={() => setActiveTab('profile')}
           >
             Profile
           </button>
           <button
             className={`pb-2 px-4 transition duration-300 ${
-              activeTab === "settings"
-                ? "border-b-4 border-blue-500 text-blue-500"
-                : "text-gray-600 hover:text-blue-500"
+              activeTab === 'settings'
+                ? 'border-b-4 border-blue-500 text-blue-500'
+                : 'text-gray-600 hover:text-blue-500'
             }`}
-            onClick={() => setActiveTab("settings")}
+            onClick={() => setActiveTab('settings')}
           >
             Settings
           </button>
         </nav>
       </div>
       <div>
-        {activeTab === "profile" && (
+        {activeTab === 'profile' && (
           <div className="bg-white rounded-lg shadow-lg p-6">
             <h2 className="text-2xl font-bold text-gray-700 mb-4">
               Profile Information
@@ -65,7 +65,7 @@ export default function Account() {
             </div>
           </div>
         )}
-        {activeTab === "settings" && (
+        {activeTab === 'settings' && (
           <div className="bg-white rounded-lg shadow-lg p-6">
             <h2 className="text-2xl font-bold text-gray-700 mb-4">
               Account Settings

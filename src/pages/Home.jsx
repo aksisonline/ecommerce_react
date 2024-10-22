@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { products } from "../data/Products";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { products } from '../data/Products';
 
 export default function Home() {
   const featuredProducts = [products[0], products[1], products[2], products[4]];
@@ -8,36 +8,36 @@ export default function Home() {
   const latestDeals = [
     {
       id: 1,
-      name: "Deal 1",
-      description: "Save 20% on all electronics!",
+      name: 'Deal 1',
+      description: 'Save 20% on all electronics!',
       image:
-        "https://th.bing.com/th/id/OIP.tdaQ3-VLGlZNzFmp-gvzMwAAAA?rs=1&pid=ImgDetMain",
+        'https://th.bing.com/th/id/OIP.tdaQ3-VLGlZNzFmp-gvzMwAAAA?rs=1&pid=ImgDetMain',
     },
     {
       id: 2,
-      name: "Deal 2",
-      description: "Buy 1 Get 1 Free on selected fashion items!",
+      name: 'Deal 2',
+      description: 'Buy 1 Get 1 Free on selected fashion items!',
       image:
-        "https://th.bing.com/th/id/OIP.eRr2i5ljCESwIaVNoT6BOQHaD4?rs=1&pid=ImgDetMain",
+        'https://th.bing.com/th/id/OIP.eRr2i5ljCESwIaVNoT6BOQHaD4?rs=1&pid=ImgDetMain',
     },
   ];
 
   const testimonials = [
     {
       id: 1,
-      name: "John Doe",
+      name: 'John Doe',
       feedback:
-        "Fantastic service and high-quality products! Highly recommend E-React for online shopping.",
+        'Fantastic service and high-quality products! Highly recommend E-React for online shopping.',
       image:
-        "https://th.bing.com/th/id/OIP.IGNf7GuQaCqz_RPq5wCkPgHaLH?w=134&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+        'https://th.bing.com/th/id/OIP.IGNf7GuQaCqz_RPq5wCkPgHaLH?w=134&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7',
     },
     {
       id: 2,
-      name: "Jane Smith",
+      name: 'Jane Smith',
       feedback:
-        "E-React made my shopping experience so easy and enjoyable. The deals are amazing!",
+        'E-React made my shopping experience so easy and enjoyable. The deals are amazing!',
       image:
-        "https://th.bing.com/th/id/OIP.pYFUThD3lXgVcPzPJsOSKQHaKi?w=142&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+        'https://th.bing.com/th/id/OIP.pYFUThD3lXgVcPzPJsOSKQHaKi?w=142&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7',
     },
   ];
 

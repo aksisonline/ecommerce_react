@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
 export default function ProductPage() {
   const product = {
     id: 1,
-    name: "Product Name",
-    price: "$49.99",
-    image: "/images/product.jpg",
-    description: "This is a detailed description of the product.",
+    name: 'Product Name',
+    price: '$49.99',
+    image: '/images/product.jpg',
+    description: 'This is a detailed description of the product.',
   };
 
   return (

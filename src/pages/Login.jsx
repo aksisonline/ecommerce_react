@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -42,7 +42,7 @@ export default function Login() {
             Login
           </button>
           <p className="mt-4 text-center">
-            Don't have an account?{" "}
+            Don't have an account?{' '}
             <Link to="/signup" className="text-blue-500 hover:underline">
               Sign Up
             </Link>

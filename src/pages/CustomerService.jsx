@@ -1,26 +1,26 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const faqs = [
   {
-    question: "How do I track my order?",
+    question: 'How do I track my order?',
     answer:
-      "You can track your order by logging into your account and viewing the order details. We also send tracking information via email once your order has been shipped.",
+      'You can track your order by logging into your account and viewing the order details. We also send tracking information via email once your order has been shipped.',
   },
   {
-    question: "What is your return policy?",
+    question: 'What is your return policy?',
     answer:
-      "We offer a 30-day return policy for most items. Products must be in their original condition and packaging. Please refer to our full return policy for more details.",
+      'We offer a 30-day return policy for most items. Products must be in their original condition and packaging. Please refer to our full return policy for more details.',
   },
   {
-    question: "Do you offer international shipping?",
+    question: 'Do you offer international shipping?',
     answer:
-      "Yes, we offer international shipping to select countries. Shipping rates and delivery times vary depending on the destination.",
+      'Yes, we offer international shipping to select countries. Shipping rates and delivery times vary depending on the destination.',
   },
   {
-    question: "How can I change or cancel my order?",
+    question: 'How can I change or cancel my order?',
     answer:
-      "You can change or cancel your order within 1 hour of placing it. Please contact our customer service team as soon as possible if you need to make changes.",
+      'You can change or cancel your order within 1 hour of placing it. Please contact our customer service team as soon as possible if you need to make changes.',
   },
 ];
 
@@ -119,7 +119,7 @@ export default function CustomerService() {
                 <h3 className="text-lg font-semibold">{faq.question}</h3>
                 <span
                   className={`transform transition-transform ${
-                    expanded === index ? "rotate-180" : ""
+                    expanded === index ? 'rotate-180' : ''
                   }`}
                 >
                   ▼
@@ -145,10 +145,10 @@ export default function CustomerService() {
         </ul>
         <p>
           For more detailed information about our shipping policies and rates,
-          please visit our{" "}
+          please visit our{' '}
           <Link to="/shipping-policy" className="text-blue-600 hover:underline">
             Shipping Policy
-          </Link>{" "}
+          </Link>{' '}
           page.
         </p>
       </section>

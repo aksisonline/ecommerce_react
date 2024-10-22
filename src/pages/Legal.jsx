@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 export default function Legal() {
   const [expanded, setExpanded] = useState(null);
@@ -15,16 +15,16 @@ export default function Legal() {
         <div className="border border-gray-200 rounded-lg">
           <button
             className="flex justify-between w-full p-4 bg-gray-100 hover:bg-gray-200"
-            onClick={() => handleToggle("privacy")}
+            onClick={() => handleToggle('privacy')}
           >
             <h2 className="text-lg font-semibold">Privacy Policy</h2>
             <span
-              className={`transform ${expanded === "privacy" ? "rotate-180" : ""} transition-transform`}
+              className={`transform ${expanded === 'privacy' ? 'rotate-180' : ''} transition-transform`}
             >
               ▼
             </span>
           </button>
-          {expanded === "privacy" && (
+          {expanded === 'privacy' && (
             <div className="p-4 bg-white">
               <p className="mb-4">
                 At Tenduzone, we are committed to protecting your privacy and
@@ -56,16 +56,16 @@ export default function Legal() {
         <div className="border border-gray-200 rounded-lg">
           <button
             className="flex justify-between w-full p-4 bg-gray-100 hover:bg-gray-200"
-            onClick={() => handleToggle("terms")}
+            onClick={() => handleToggle('terms')}
           >
             <h2 className="text-lg font-semibold">Terms of Service</h2>
             <span
-              className={`transform ${expanded === "terms" ? "rotate-180" : ""} transition-transform`}
+              className={`transform ${expanded === 'terms' ? 'rotate-180' : ''} transition-transform`}
             >
               ▼
             </span>
           </button>
-          {expanded === "terms" && (
+          {expanded === 'terms' && (
             <div className="p-4 bg-white">
               <p className="mb-4">
                 Welcome to Tenduzone. By accessing or using our website, you
@@ -95,16 +95,16 @@ export default function Legal() {
         <div className="border border-gray-200 rounded-lg">
           <button
             className="flex justify-between w-full p-4 bg-gray-100 hover:bg-gray-200"
-            onClick={() => handleToggle("returns")}
+            onClick={() => handleToggle('returns')}
           >
             <h2 className="text-lg font-semibold">Return Policy</h2>
             <span
-              className={`transform ${expanded === "returns" ? "rotate-180" : ""} transition-transform`}
+              className={`transform ${expanded === 'returns' ? 'rotate-180' : ''} transition-transform`}
             >
               ▼
             </span>
           </button>
-          {expanded === "returns" && (
+          {expanded === 'returns' && (
             <div className="p-4 bg-white">
               <p className="mb-4">
                 We want you to be completely satisfied with your purchase. If
@@ -134,16 +134,16 @@ export default function Legal() {
         <div className="border border-gray-200 rounded-lg">
           <button
             className="flex justify-between w-full p-4 bg-gray-100 hover:bg-gray-200"
-            onClick={() => handleToggle("shipping")}
+            onClick={() => handleToggle('shipping')}
           >
             <h2 className="text-lg font-semibold">Shipping Policy</h2>
             <span
-              className={`transform ${expanded === "shipping" ? "rotate-180" : ""} transition-transform`}
+              className={`transform ${expanded === 'shipping' ? 'rotate-180' : ''} transition-transform`}
             >
               ▼
             </span>
           </button>
-          {expanded === "shipping" && (
+          {expanded === 'shipping' && (
             <div className="p-4 bg-white">
               <p className="mb-4">
                 We offer various shipping options to meet your needs. Please

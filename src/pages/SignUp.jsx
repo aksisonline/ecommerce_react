@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function SignUp() {
   const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-    confirmPassword: "",
+    email: '',
+    password: '',
+    confirmPassword: '',
     agreeToTerms: false,
   });
 
@@ -13,7 +13,7 @@ export default function SignUp() {
     const { name, value, type, checked } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: type === "checkbox" ? checked : value,
+      [name]: type === 'checkbox' ? checked : value,
     }));
   };
 
@@ -70,7 +70,7 @@ export default function SignUp() {
               required
             />
             <label className="text-gray-700">
-              I agree to the{" "}
+              I agree to the{' '}
               <Link to="/terms" className="text-blue-500 hover:underline">
                 Terms and Conditions
               </Link>
@@ -83,7 +83,7 @@ export default function SignUp() {
             Sign Up
           </button>
           <p className="mt-4 text-center">
-            Already have an account?{" "}
+            Already have an account?{' '}
             <Link to="/login" className="text-blue-500 hover:underline">
               Login
             </Link>

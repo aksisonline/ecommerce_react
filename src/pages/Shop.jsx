@@ -1,7 +1,7 @@
 // src/pages/Shop.jsx
-import React from "react";
-import { useCart } from "../context/CartContext"; // Adjust path as needed
-import { products } from "../data/Products";
+import React from 'react';
+import { useCart } from '../context/CartContext'; // Adjust path as needed
+import { products } from '../data/Products';
 export default function Shop() {
   const { addToCart } = useCart(); // Get the addToCart function from the context
 
