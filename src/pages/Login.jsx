@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     // Login logic
-  }
+  };
 
   return (
     <div className="container mx-auto py-12 px-4">
@@ -35,12 +35,20 @@ export default function Login() {
               required
             />
           </div>
-          <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded">Login</button>
+          <button
+            type="submit"
+            className="w-full bg-blue-500 text-white py-2 rounded"
+          >
+            Login
+          </button>
           <p className="mt-4 text-center">
-            Don't have an account? <Link to="/signup" className="text-blue-500 hover:underline">Sign Up</Link>
+            Don't have an account?{' '}
+            <Link to="/signup" className="text-blue-500 hover:underline">
+              Sign Up
+            </Link>
           </p>
         </form>
       </div>
     </div>
-  )
+  );
 }

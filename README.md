@@ -5,16 +5,19 @@ E-React is a comprehensive e-commerce web application built with React, showcasi
 ## Features and How to Use
 
 1. **Home Page**
+
    - Browse featured products and latest deals
    - View customer testimonials
    - Click on "Shop Now" to start shopping
 
 2. **Product Catalog (Shop Page)**
+
    - View all available products in a grid layout
    - Click on a product to view details
    - Add products to cart directly from the catalog
 
 3. **Shopping Cart**
+
    - Access your cart by clicking the cart icon in the header
    - View added items, quantities, and total cost
    - Adjust quantities or remove items
@@ -22,32 +25,39 @@ E-React is a comprehensive e-commerce web application built with React, showcasi
    - Proceed to checkout
 
 4. **Checkout Process**
+
    - Multi-step form for easy completion
    - Enter shipping details
    - Choose payment method
    - Review your order before finalizing
 
 5. **User Account Management**
+
    - Create an account or log in
    - View and edit profile information
    - Change account settings
    - View order history (to be implemented)
 
 6. **Blog Section**
+
    - Read latest articles and product news
    - Comment on blog posts (to be implemented)
 
 7. **Customer Service**
+
    - Browse Frequently Asked Questions (FAQ)
    - Contact support via a form
 
 8. **About Us Page**
+
    - Learn about the company and team members
 
 9. **Legal Information**
+
    - Access Privacy Policy, Terms of Service, and other legal documents
 
 10. **Shop Owner Dashboard** (for administrators)
+
     - Manage inventory (to be implemented)
     - View sales analytics (to be implemented)
 
@@ -80,25 +90,32 @@ E-React is a comprehensive e-commerce web application built with React, showcasi
 ### Installation
 
 1. Clone the repository:
+
    ```
    git clone https://github.com/your-username/e-react.git
    cd e-react
    ```
 
 2. Install dependencies:
+
    ```
    npm install
    ```
+
    or if you're using yarn:
+
    ```
    yarn install
    ```
 
 3. Start the development server:
+
    ```
    npm start
    ```
+
    or with yarn:
+
    ```
    yarn start
    ```

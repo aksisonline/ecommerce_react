@@ -5,7 +5,9 @@ export default function Account() {
 
   return (
     <div className="max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-4xl font-extrabold text-gray-800 mb-8 text-center">My Account</h1>
+      <h1 className="text-4xl font-extrabold text-gray-800 mb-8 text-center">
+        My Account
+      </h1>
       <div className="mb-8">
         <nav className="flex justify-center space-x-6 border-b">
           <button
@@ -33,7 +35,9 @@ export default function Account() {
       <div>
         {activeTab === 'profile' && (
           <div className="bg-white rounded-lg shadow-lg p-6">
-            <h2 className="text-2xl font-bold text-gray-700 mb-4">Profile Information</h2>
+            <h2 className="text-2xl font-bold text-gray-700 mb-4">
+              Profile Information
+            </h2>
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
                 <span className="font-semibold text-gray-600">Name:</span>
@@ -49,7 +53,10 @@ export default function Account() {
               </div>
               <div className="flex items-center space-x-4">
                 <span className="font-semibold text-gray-600">Address:</span>
-                <span className="text-gray-800">Flat No. 501, Vinayaka Castle, Durga Nagar, Madhurawada, 530041</span>
+                <span className="text-gray-800">
+                  Flat No. 501, Vinayaka Castle, Durga Nagar, Madhurawada,
+                  530041
+                </span>
               </div>
               <div className="flex items-center space-x-4">
                 <span className="font-semibold text-gray-600">Joined:</span>
@@ -60,10 +67,14 @@ export default function Account() {
         )}
         {activeTab === 'settings' && (
           <div className="bg-white rounded-lg shadow-lg p-6">
-            <h2 className="text-2xl font-bold text-gray-700 mb-4">Account Settings</h2>
+            <h2 className="text-2xl font-bold text-gray-700 mb-4">
+              Account Settings
+            </h2>
             <div className="space-y-6">
               <div className="bg-gray-50 p-4 rounded-lg shadow-inner">
-                <h3 className="font-semibold text-gray-700 mb-2">Change Password</h3>
+                <h3 className="font-semibold text-gray-700 mb-2">
+                  Change Password
+                </h3>
                 <div className="space-y-2">
                   <input
                     type="password"
@@ -86,21 +97,33 @@ export default function Account() {
                 </div>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg shadow-inner">
-                <h3 className="font-semibold text-gray-700 mb-2">Email Notifications</h3>
+                <h3 className="font-semibold text-gray-700 mb-2">
+                  Email Notifications
+                </h3>
                 <div className="space-y-2">
                   <label className="flex items-center space-x-2">
-                    <input type="checkbox" className="form-checkbox text-blue-500" />
+                    <input
+                      type="checkbox"
+                      className="form-checkbox text-blue-500"
+                    />
                     <span>Receive promotional emails</span>
                   </label>
                   <label className="flex items-center space-x-2">
-                    <input type="checkbox" className="form-checkbox text-blue-500" />
+                    <input
+                      type="checkbox"
+                      className="form-checkbox text-blue-500"
+                    />
                     <span>Receive account activity alerts</span>
                   </label>
                 </div>
               </div>
               <div className="bg-red-50 p-4 rounded-lg shadow-inner">
-                <h3 className="font-semibold text-red-600 mb-2">Delete Account</h3>
-                <p className="text-red-500 mb-4">Warning: This action is irreversible.</p>
+                <h3 className="font-semibold text-red-600 mb-2">
+                  Delete Account
+                </h3>
+                <p className="text-red-500 mb-4">
+                  Warning: This action is irreversible.
+                </p>
                 <button className="bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-2 rounded-lg transition duration-300">
                   Delete Account
                 </button>

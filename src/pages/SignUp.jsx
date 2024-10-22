@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function SignUp() {
   const [formData, setFormData] = useState({
@@ -7,20 +7,20 @@ export default function SignUp() {
     password: '',
     confirmPassword: '',
     agreeToTerms: false,
-  })
+  });
 
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target
-    setFormData(prevData => ({
+    const { name, value, type, checked } = e.target;
+    setFormData((prevData) => ({
       ...prevData,
       [name]: type === 'checkbox' ? checked : value,
-    }))
-  }
+    }));
+  };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     // Sign-up logic
-  }
+  };
 
   return (
     <div className="container mx-auto py-12 px-4">
@@ -70,15 +70,26 @@ export default function SignUp() {
               required
             />
             <label className="text-gray-700">
-              I agree to the <Link to="/terms" className="text-blue-500 hover:underline">Terms and Conditions</Link>
+              I agree to the{' '}
+              <Link to="/terms" className="text-blue-500 hover:underline">
+                Terms and Conditions
+              </Link>
             </label>
           </div>
-          <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded">Sign Up</button>
+          <button
+            type="submit"
+            className="w-full bg-blue-500 text-white py-2 rounded"
+          >
+            Sign Up
+          </button>
           <p className="mt-4 text-center">
-            Already have an account? <Link to="/login" className="text-blue-500 hover:underline">Login</Link>
+            Already have an account?{' '}
+            <Link to="/login" className="text-blue-500 hover:underline">
+              Login
+            </Link>
           </p>
         </form>
       </div>
     </div>
-  )
+  );
 }

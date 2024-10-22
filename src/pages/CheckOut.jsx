@@ -166,12 +166,7 @@ export default function Checkout() {
                   placeholder="Expiry date"
                   className="input"
                 />
-                <input
-                  required
-                  id="cvv"
-                  placeholder="CVV"
-                  className="input"
-                />
+                <input required id="cvv" placeholder="CVV" className="input" />
               </div>
             )}
           </div>
@@ -209,9 +204,7 @@ export default function Checkout() {
             <div key={label} className="flex-1">
               <div
                 className={`border-t-4 p-2 ${
-                  index <= activeStep
-                    ? 'border-blue-500'
-                    : 'border-gray-300'
+                  index <= activeStep ? 'border-blue-500' : 'border-gray-300'
                 }`}
               >
                 <p className={index === activeStep ? 'text-blue-500' : ''}>
@@ -243,7 +236,10 @@ export default function Checkout() {
               >
                 Back
               </button>
-              <button className="btn bg-blue-500 text-white" onClick={handleNext}>
+              <button
+                className="btn bg-blue-500 text-white"
+                onClick={handleNext}
+              >
                 {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
               </button>
             </div>

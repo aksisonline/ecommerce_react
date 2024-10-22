@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 export default function ShopKeeper() {
-  const [activeTab, setActiveTab] = useState('inventory')
+  const [activeTab, setActiveTab] = useState('inventory');
 
   return (
     <div className="container mx-auto py-12 px-4">
@@ -37,5 +37,5 @@ export default function ShopKeeper() {
         )}
       </div>
     </div>
-  )
+  );
 }

@@ -77,27 +77,38 @@ export default function CustomerService() {
             <h3 className="text-lg font-semibold mb-2">Contact Information</h3>
             <div className="space-y-2">
               <div className="flex items-center">
-                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="w-5 h-5 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v2h20v-2c0-3.33-6.67-5-10-5z" />
                 </svg>
                 <span>support@tenduzone.com</span>
               </div>
               <div className="flex items-center">
-                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="w-5 h-5 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path d="M6.62 10.79a15.478 15.478 0 006.59 6.59l2.2-2.2a1.005 1.005 0 011.05-.27c1.12.37 2.33.57 3.54.57.55 0 1 .45 1 1v3.72c0 .55-.45 1-1 1C9.39 22 2 14.61 2 5.01c0-.55.45-1 1-1H6.72c.55 0 1 .45 1 1 0 1.21.2 2.42.57 3.54.12.36.04.77-.27 1.05l-2.2 2.19z" />
                 </svg>
                 <span>+1 (800) 123-4567</span>
               </div>
             </div>
             <p className="text-gray-600 mt-4">
-              Our customer service team is available Monday through Friday, 9am to 5pm EST.
+              Our customer service team is available Monday through Friday, 9am
+              to 5pm EST.
             </p>
           </div>
         </div>
       </section>
 
       <section className="mb-12">
-        <h2 className="text-xl font-semibold mb-4">Frequently Asked Questions</h2>
+        <h2 className="text-xl font-semibold mb-4">
+          Frequently Asked Questions
+        </h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div key={index} className="border border-gray-200 rounded-lg">
@@ -126,16 +137,15 @@ export default function CustomerService() {
 
       <section>
         <h2 className="text-xl font-semibold mb-4">Shipping Information</h2>
-        <p className="mb-2">
-          We offer the following shipping options:
-        </p>
+        <p className="mb-2">We offer the following shipping options:</p>
         <ul className="list-disc pl-6 mb-4">
           <li>Standard Shipping (3-5 business days)</li>
           <li>Express Shipping (2-3 business days)</li>
           <li>Next Day Delivery (order by 2pm for next-day delivery)</li>
         </ul>
         <p>
-          For more detailed information about our shipping policies and rates, please visit our{' '}
+          For more detailed information about our shipping policies and rates,
+          please visit our{' '}
           <Link to="/shipping-policy" className="text-blue-600 hover:underline">
             Shipping Policy
           </Link>{' '}

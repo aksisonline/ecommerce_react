@@ -47,7 +47,10 @@ export default function Blog() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {blogPosts.map((post) => (
-          <div key={post.id} className="bg-white rounded-lg shadow-md overflow-hidden">
+          <div
+            key={post.id}
+            className="bg-white rounded-lg shadow-md overflow-hidden"
+          >
             <img
               src={post.image}
               alt={post.title}
@@ -98,10 +101,13 @@ export default function Blog() {
       </section>
 
       <section className="mt-12">
-        <h2 className="text-xl font-semibold mb-4">Subscribe to Our Newsletter</h2>
+        <h2 className="text-xl font-semibold mb-4">
+          Subscribe to Our Newsletter
+        </h2>
         <div className="bg-white rounded-lg shadow-md p-6">
           <p className="mb-4">
-            Stay up to date with our latest blog posts, product releases, and exclusive offers!
+            Stay up to date with our latest blog posts, product releases, and
+            exclusive offers!
           </p>
           <form className="flex gap-2">
             <input
