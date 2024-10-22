@@ -1,14 +1,17 @@
 // src/pages/Cart.jsx
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useCart } from '../context/CartContext'; // Adjust path if necessary
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useCart } from "../context/CartContext"; // Adjust path if necessary
 
 export default function Cart() {
   const { cartItems, updateQuantity, removeItem } = useCart();
-  const [couponCode, setCouponCode] = useState('');
+  const [couponCode, setCouponCode] = useState("");
 
   // Calculate subtotal, shipping, and total
-  const subtotal = cartItems.reduce((sum, item) => sum + Number(item.price) * item.quantity, 0);
+  const subtotal = cartItems.reduce(
+    (sum, item) => sum + Number(item.price) * item.quantity,
+    0,
+  );
   const shipping = 10; // Fixed shipping cost, you can make this dynamic if needed
   const total = subtotal + shipping;
 
@@ -28,11 +31,20 @@ export default function Cart() {
           {/* Cart items list */}
           <div className="flex-1 space-y-4">
             {cartItems.map((item) => (
-              <div key={item.id} className="bg-white shadow-md rounded-lg p-4 flex items-center">
-                <img src={item.image} alt={item.name} className="w-24 h-24 object-cover mr-4" />
+              <div
+                key={item.id}
+                className="bg-white shadow-md rounded-lg p-4 flex items-center"
+              >
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-24 h-24 object-cover mr-4"
+                />
                 <div className="flex-grow">
                   <h2 className="text-lg font-semibold">{item.name}</h2>
-                  <p className="text-gray-600">${Number(item.price).toFixed(2)}</p>
+                  <p className="text-gray-600">
+                    ${Number(item.price).toFixed(2)}
+                  </p>
                 </div>
                 <div className="flex items-center">
                   <button
@@ -103,8 +115,6 @@ export default function Cart() {
     </div>
   );
 }
-
-
 
 // import React, { useState } from 'react';
 // import { Link } from 'react-router-dom';

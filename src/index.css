@@ -3,10 +3,9 @@
 @tailwind utilities;
 
 .input {
-    @apply w-full p-2 border border-gray-300 rounded-md;
-  }
+  @apply w-full p-2 border border-gray-300 rounded-md;
+}
 
 .btn {
-    @apply px-4 py-2 rounded border bg-gray-200;
-  }
-  
+  @apply px-4 py-2 rounded border bg-gray-200;
+}

@@ -1,42 +1,42 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const blogPosts = [
   {
     id: 1,
-    title: 'Top 10 Tech Gadgets for 2023',
+    title: "Top 10 Tech Gadgets for 2023",
     excerpt:
-      'Discover the most innovative and must-have tech gadgets that are set to revolutionize your daily life in 2023.',
-    image: '/placeholder.svg',
-    date: '2023-05-15',
-    category: 'Technology',
+      "Discover the most innovative and must-have tech gadgets that are set to revolutionize your daily life in 2023.",
+    image: "/placeholder.svg",
+    date: "2023-05-15",
+    category: "Technology",
   },
   {
     id: 2,
     title: "Summer Fashion Trends: What's Hot and What's Not",
     excerpt:
-      'Get ready for the summer season with our comprehensive guide to the latest fashion trends that will keep you stylish and comfortable.',
-    image: '/placeholder.svg',
-    date: '2023-05-10',
-    category: 'Fashion',
+      "Get ready for the summer season with our comprehensive guide to the latest fashion trends that will keep you stylish and comfortable.",
+    image: "/placeholder.svg",
+    date: "2023-05-10",
+    category: "Fashion",
   },
   {
     id: 3,
-    title: '5 Easy Home Decor Ideas to Refresh Your Space',
+    title: "5 Easy Home Decor Ideas to Refresh Your Space",
     excerpt:
       "Transform your living space with these simple yet effective home decor ideas that won't break the bank.",
-    image: '/placeholder.svg',
-    date: '2023-05-05',
-    category: 'Home & Living',
+    image: "/placeholder.svg",
+    date: "2023-05-05",
+    category: "Home & Living",
   },
   {
     id: 4,
-    title: 'The Ultimate Guide to Choosing the Perfect Laptop',
+    title: "The Ultimate Guide to Choosing the Perfect Laptop",
     excerpt:
-      'Navigate the complex world of laptops with our comprehensive guide to help you find the perfect device for your needs and budget.',
-    image: '/placeholder.svg',
-    date: '2023-04-30',
-    category: 'Technology',
+      "Navigate the complex world of laptops with our comprehensive guide to help you find the perfect device for your needs and budget.",
+    image: "/placeholder.svg",
+    date: "2023-04-30",
+    category: "Technology",
   },
 ];
 
@@ -47,7 +47,10 @@ export default function Blog() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {blogPosts.map((post) => (
-          <div key={post.id} className="bg-white rounded-lg shadow-md overflow-hidden">
+          <div
+            key={post.id}
+            className="bg-white rounded-lg shadow-md overflow-hidden"
+          >
             <img
               src={post.image}
               alt={post.title}
@@ -80,11 +83,11 @@ export default function Blog() {
         <h2 className="text-xl font-semibold mb-4">Categories</h2>
         <div className="flex flex-wrap gap-2">
           {[
-            'Technology',
-            'Fashion',
-            'Home & Living',
-            'Lifestyle',
-            'Health & Wellness',
+            "Technology",
+            "Fashion",
+            "Home & Living",
+            "Lifestyle",
+            "Health & Wellness",
           ].map((category) => (
             <Link
               key={category}
@@ -98,10 +101,13 @@ export default function Blog() {
       </section>
 
       <section className="mt-12">
-        <h2 className="text-xl font-semibold mb-4">Subscribe to Our Newsletter</h2>
+        <h2 className="text-xl font-semibold mb-4">
+          Subscribe to Our Newsletter
+        </h2>
         <div className="bg-white rounded-lg shadow-md p-6">
           <p className="mb-4">
-            Stay up to date with our latest blog posts, product releases, and exclusive offers!
+            Stay up to date with our latest blog posts, product releases, and
+            exclusive offers!
           </p>
           <form className="flex gap-2">
             <input
