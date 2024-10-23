@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom';
 export default function AboutUs() {
   const teamMembers = [
     {
-      name: 'Alice Johnson',
+      name: 'Tendulkar Budida',
       role: 'CEO',
       image:
         'https://th.bing.com/th/id/OIP.p298hLOnW-niYG2Z3aAYtAHaEK?rs=1&pid=ImgDetMain',
     },
     {
-      name: 'Michael Brown',
+      name: 'Abhiram Kanna Seelamanthula',
       role: 'CTO',
       image:
         'https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fG1hbnxlbnwwfHx8fDE2NDYzMTI0MjA&ixlib=rb-1.2.1&q=80&w=400',
     },
     {
-      name: 'Sarah Wilson',
+      name: 'Tanooj Vardhan',
       role: 'Head of Marketing',
       image:
         'https://th.bing.com/th/id/OIP.a7ajXFDlQIEpGdBYPjBYVQHaGl?w=194&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7',
