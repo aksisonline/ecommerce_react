@@ -7,7 +7,7 @@ export default function AboutUs() {
       name: 'Tendulkar Budida',
       role: 'CEO',
       image:
-        'https://media.licdn.com/dms/image/v2/D5635AQERfgr9y5_kfw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1722653913029?e=1730268000&v=beta&t=1dr27PtpBOOc6VG1qdp7K4enT0Mhn5bwnJzLQd-7wcc',
+        'https://media.licdn.com/dms/image/v2/D5603AQESJ5PytdShSg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722653911141?e=1735171200&v=beta&t=aP6TzvmAiD6E4WUPeoGBOnupg_HuVfCyE2ISfOb_dpg',
     },
     {
       name: 'Abhiram Kanna Seelamanthula',
