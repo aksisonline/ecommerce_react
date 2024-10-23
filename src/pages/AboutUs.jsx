@@ -7,19 +7,19 @@ export default function AboutUs() {
       name: 'Tendulkar Budida',
       role: 'CEO',
       image:
-        'https://th.bing.com/th/id/OIP.p298hLOnW-niYG2Z3aAYtAHaEK?rs=1&pid=ImgDetMain',
+        'https://media.licdn.com/dms/image/v2/D5635AQERfgr9y5_kfw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1722653913029?e=1730268000&v=beta&t=1dr27PtpBOOc6VG1qdp7K4enT0Mhn5bwnJzLQd-7wcc',
     },
     {
       name: 'Abhiram Kanna Seelamanthula',
       role: 'CTO',
       image:
-        'https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fG1hbnxlbnwwfHx8fDE2NDYzMTI0MjA&ixlib=rb-1.2.1&q=80&w=400',
+        'https://media.licdn.com/dms/image/v2/D5603AQFe2rJK_oRy2Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721644215887?e=1735171200&v=beta&t=LXvDSsvxbuFDVIYfpIMmnw9Eq2zOvbQDRGzhIG5JJcg',
     },
     {
       name: 'Tanooj Vardhan',
       role: 'Head of Marketing',
       image:
-        'https://th.bing.com/th/id/OIP.a7ajXFDlQIEpGdBYPjBYVQHaGl?w=194&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7',
+        'https://media.licdn.com/dms/image/v2/D5603AQEjYqdsllsrUA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1696756780387?e=1735171200&v=beta&t=NNgZH2Nw5qOyo-uKBm-DMNCO9M9SLcpLRr9cLHWtvPI',
     },
   ];
 
