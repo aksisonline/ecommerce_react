@@ -29,7 +29,7 @@ export default function AboutUs() {
         About Us
       </h1>
       <p className="text-gray-700 mb-12 text-center max-w-3xl mx-auto">
-        At E-React, our mission is to create exceptional experiences for our
+        At Shopie, our mission is to create exceptional experiences for our
         customers. With a focus on innovation, quality, and customer
         satisfaction, we strive to exceed expectations every step of the way.
         Learn more about our journey and the values that drive us forward.
@@ -89,7 +89,7 @@ export default function AboutUs() {
               2020 - The Beginning
             </h3>
             <p className="text-gray-600">
-              E-React started as a small startup with a big vision: to make
+              Shopie started as a small startup with a big vision: to make
               online shopping more accessible and enjoyable for everyone. From
               humble beginnings, we have grown steadily by putting our customers
               first.
@@ -106,7 +106,7 @@ export default function AboutUs() {
           <div className="bg-white-100 rounded-lg p-6 shadow-md transform transition-transform hover:scale-105">
             <h3 className="text-2xl font-semibold mb-2">2024 - Today</h3>
             <p className="text-gray-600">
-              Today, E-React is a leading name in the e-commerce space, known
+              Today, Shopie is a leading name in the e-commerce space, known
               for our innovative approach, exceptional customer service, and
               unwavering commitment to quality.
             </p>

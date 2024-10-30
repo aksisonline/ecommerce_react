@@ -27,7 +27,7 @@ export default function Home() {
       id: 1,
       name: 'John Doe',
       feedback:
-        'Fantastic service and high-quality products! Highly recommend E-React for online shopping.',
+        'Fantastic service and high-quality products! Highly recommend Shopie for online shopping.',
       image:
         'https://th.bing.com/th/id/OIP.IGNf7GuQaCqz_RPq5wCkPgHaLH?w=134&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7',
     },
@@ -35,7 +35,7 @@ export default function Home() {
       id: 2,
       name: 'Jane Smith',
       feedback:
-        'E-React made my shopping experience so easy and enjoyable. The deals are amazing!',
+        'Shopie made my shopping experience so easy and enjoyable. The deals are amazing!',
       image:
         'https://th.bing.com/th/id/OIP.pYFUThD3lXgVcPzPJsOSKQHaKi?w=142&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7',
     },
@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <div className="max-w-6xl mx-auto py-8 px-4">
       <section className="mb-12 text-center">
-        <h1 className="text-3xl font-bold mb-4">Welcome to E-React</h1>
+        <h1 className="text-3xl font-bold mb-4">Welcome to Shopie</h1>
         <h2 className="text-xl mb-6">Your one-stop shop for all your needs</h2>
         <Link
           to="/shop"
