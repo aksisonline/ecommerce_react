@@ -41,11 +41,11 @@ export default function Account() {
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
                 <span className="font-semibold text-gray-600">Name:</span>
-                <span className="text-gray-800">Tendulkar Budida</span>
+                <span className="text-gray-800">R. V. Pavan Charith Rao</span>
               </div>
               <div className="flex items-center space-x-4">
                 <span className="font-semibold text-gray-600">Email:</span>
-                <span className="text-gray-800">chandu.tendul@gmail.com</span>
+                <span className="text-gray-800">charithrocks@gmail.com</span>
               </div>
               <div className="flex items-center space-x-4">
                 <span className="font-semibold text-gray-600">Phone:</span>

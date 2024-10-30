@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 export default function AboutUs() {
   const teamMembers = [
     {
-      name: 'Tendulkar Budida',
+      name: 'Pavan Charith',
       role: 'CEO',
       image:
-        'https://media.licdn.com/dms/image/v2/D5603AQESJ5PytdShSg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722653911141?e=1735171200&v=beta&t=aP6TzvmAiD6E4WUPeoGBOnupg_HuVfCyE2ISfOb_dpg',
+        'https://scontent.fhyd11-1.fna.fbcdn.net/v/t39.30808-6/275783503_3825428154349412_656515853661936753_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=3QC1A6CkWwkQ7kNvgFH333v&_nc_zt=23&_nc_ht=scontent.fhyd11-1.fna&_nc_gid=ARqDtvTvLoDWPUUIU--pDzm&oh=00_AYDuTvKzdkHO5lJjJprk1n-znlK8OLLaOTi-1sIFxXD3Jw&oe=672775AD',
     },
     {
       name: 'Abhiram Kanna Seelamanthula',
