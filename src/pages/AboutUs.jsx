@@ -10,16 +10,16 @@ export default function AboutUs() {
         'https://scontent.fhyd11-1.fna.fbcdn.net/v/t39.30808-6/275783503_3825428154349412_656515853661936753_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=3QC1A6CkWwkQ7kNvgFH333v&_nc_zt=23&_nc_ht=scontent.fhyd11-1.fna&_nc_gid=ARqDtvTvLoDWPUUIU--pDzm&oh=00_AYDuTvKzdkHO5lJjJprk1n-znlK8OLLaOTi-1sIFxXD3Jw&oe=672775AD',
     },
     {
-      name: 'Abhiram Kanna Seelamanthula',
+      name: 'Tendulkar Budida',
       role: 'CTO',
       image:
-        'https://media.licdn.com/dms/image/v2/D5603AQFe2rJK_oRy2Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721644215887?e=1735171200&v=beta&t=LXvDSsvxbuFDVIYfpIMmnw9Eq2zOvbQDRGzhIG5JJcg',
+        'https://media.licdn.com/dms/image/v2/D5603AQESJ5PytdShSg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722653911141?e=1735776000&v=beta&t=7zOvBjSQNJb6inm4d3xKRZxACQLTRooXxwYP1QYBuV4',
     },
     {
-      name: 'Tanooj Vardhan',
+      name: 'Pardha Sai Puripanda',
       role: 'Head of Marketing',
       image:
-        'https://media.licdn.com/dms/image/v2/D5603AQEjYqdsllsrUA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1696756780387?e=1735171200&v=beta&t=NNgZH2Nw5qOyo-uKBm-DMNCO9M9SLcpLRr9cLHWtvPI',
+        'https://scontent.fhyd14-2.fna.fbcdn.net/v/t39.30808-6/254507799_967007250563075_513204293496247863_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=FZbxpv89hnsQ7kNvgGEB9xr&_nc_zt=23&_nc_ht=scontent.fhyd14-2.fna&_nc_gid=A1vatQYXR00QnnMl2z-7pM3&oh=00_AYCx9q6Px_zd73Yr_gmZbGmXrMIjpTJ1IFNHiKBeA6UzSQ&oe=672A3AA9',
     },
   ];
 
