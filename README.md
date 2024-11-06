@@ -1,6 +1,6 @@
-# E-React: Modern E-commerce Platform
+# E-React: Gemini API Powered E-Commerce Platform
 
-E-React is a comprehensive e-commerce web application built with React, showcasing modern web development practices and a full suite of features for online retail.
+E-React is a comprehensive e-commerce web application built with React and powered by the Gemini API, showcasing modern web development practices and a full suite of features for online retail.
 
 ## Features and How to Use
 
@@ -79,6 +79,7 @@ E-React is a comprehensive e-commerce web application built with React, showcasi
 - React Router for navigation
 - Tailwind CSS for styling
 - Context API for state management
+- Gemini API for generative AI capabilities
 
 ## Getting Started
 
@@ -91,64 +92,6 @@ E-React is a comprehensive e-commerce web application built with React, showcasi
 
 1. Clone the repository:
 
-   ```
+   ```sh
    git clone https://github.com/your-username/e-react.git
    cd e-react
-   ```
-
-2. Install dependencies:
-
-   ```
-   npm install
-   ```
-
-   or if you're using yarn:
-
-   ```
-   yarn install
-   ```
-
-3. Start the development server:
-
-   ```
-   npm start
-   ```
-
-   or with yarn:
-
-   ```
-   yarn start
-   ```
-
-4. Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
-
-## Project Structure
-
-- `/src`: Source files
-  - `/components`: Reusable React components
-  - `/pages`: Individual page components
-  - `/context`: React Context files
-  - `/styles`: CSS files (if any outside of components)
-- `/public`: Static files
-
-## Available Scripts
-
-In the project directory, you can run:
-
-- `npm start`: Runs the app in development mode
-- `npm test`: Launches the test runner
-- `npm run build`: Builds the app for production
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgments
-
-- React team for the amazing library
-- Tailwind CSS for the utility-first CSS framework
-- All contributors and supporters of the project
